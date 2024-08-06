@@ -40,6 +40,10 @@ sources:
         columns:
           - name: orders_id
             description: id of orders
+            tests:
+              - unique:
+                  - not_null
+                  
            
           - name: shipping_fee
             description: shipping fee
