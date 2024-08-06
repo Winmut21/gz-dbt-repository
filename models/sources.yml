@@ -10,6 +10,7 @@ sources:
         tests:
           - unique:
               column_name: "(orders_id || '_' || pdt_id)"
+
         description: sales of greenwez
         columns:
           - name: date_date
