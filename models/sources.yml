@@ -3,10 +3,47 @@ version: 2
 sources:
   - name: raw
     schema: gz_raw_data
+    description: greenwez raw data source
     tables:
       - name: sales
         identifier: raw_gz_sales 
+        tests:
+          - unique:
+              column_name: "(orders_id || '_' || pdt_id)"
+        description: sales of greenwez
+        columns:
+          - name: date_date
+            description:  date of purchase
+          - name: orders_id
+            description: id orders
+          - name: products_id
+            description: id products
+          - name: revenue
+            description: total income 
+          - name: quantity
+            description: amount of sales per order
       - name: product
         identifier: raw_gz_product
+        description: products of greenwez
+        columns:
+          - name: products_id
+            description: id from the products
+            tests:
+              - unique
+              - not_null
+                
+          - name: purchase_price
+            description: price per order
       - name: ship
         identifier: raw_gz_ship
+        description: shipping details o greenwez
+        columns:
+          - name: orders_id
+            description: id of orders
+           
+          - name: shipping_fee
+            description: shipping fee
+          - name: logCost
+            description: cost of logidtics
+          - name: ship_cost
+            description: cost of shipping
