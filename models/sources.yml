@@ -53,3 +53,84 @@ sources:
             description: cost of logistics
           - name: ship_cost
             description: cost of shipping
+
+      - name: adwords
+        identifier: raw_gz_adwords
+ 
+        description: sales of adwords
+        columns:
+          - name: date_date
+            description:  date of purchase
+          - name: paid_source
+            description: the source where data is coming from
+          - name: campaign_key
+            description: campaign identifier
+          - name: camPGN_name
+            description: name of the campaign
+          - name: ads_cost
+            description: cost of adverts
+          - name: impression
+            description: nb of impression
+          - name: click
+            description: nb of clicks          
+
+      - name: bing
+        identifier: raw_gz_bing
+ 
+        description: sales of bing
+        columns:
+          - name: date_date
+            description:  date of purchase
+          - name: paid_source
+            description: the source where data is coming from
+          - name: campaign_key
+            description: campaign identifier
+          - name: camPGN_name
+            description: name of the campaign
+          - name: ads_cost
+            description: cost of adverts
+          - name: impression
+            description: nb of impression
+          - name: click
+            description: nb of clicks          
+
+      - name: criteo
+        identifier: raw_gz_criteo
+ 
+        description: sales of criteo
+        columns:
+          - name: date_date
+            description:  date of purchase
+          - name: paid_source
+            description: the source where data is coming from
+          - name: campaign_key
+            description: campaign identifier
+          - name: camPGN_name
+            description: name of the campaign
+          - name: ads_cost
+            description: cost of adverts
+          - name: impression
+            description: nb of impression
+          - name: click
+            description: nb of clicks          
+
+      - name: facebook
+        identifier: raw_gz_facebook
+ 
+        description: sales of facebook
+        columns:
+          - name: date_date
+            description:  date of purchase
+          - name: paid_source
+            description: the source where data is coming from
+          - name: campaign_key
+            description: campaign identifier
+          - name: camPGN_name
+            description: name of the campaign
+          - name: ads_cost
+            description: cost of adverts
+          - name: impression
+            description: nb of impression
+          - name: click
+            description: nb of clicks          
+
